@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Low-power brightness sensor used while always-on display is active. -->
+    <string name="doze_brightness_sensor_type" translatable="false">qti.sensor.lux_aod</string>
+
+    <!-- Brightness targets for the low/high ambient-light sensor events. -->
+    <integer-array name="config_doze_brightness_sensor_to_brightness">
+        <item>30</item>
+        <item>65</item>
+    </integer-array>
+
+    <integer-array name="config_doze_brightness_sensor_to_scrim_opacity">
+        <item>0</item>
+        <item>0</item>
+    </integer-array>
+
+    <integer-array name="config_doze_brightness_sensor_to_wallpaper_scrim_opacity">
+        <item>0</item>
+        <item>0</item>
+    </integer-array>
+</resources>
