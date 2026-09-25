@@ -14,6 +14,11 @@ $(call inherit-product, device/oneplus/infiniti/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Optional Pixel experience for local, unofficial builds.
+ifeq ($(WITH_GMS),true)
+$(call inherit-product, vendor/lineage/config/pixel.mk)
+endif
+
 PRODUCT_NAME := lineage_infiniti
 PRODUCT_DEVICE := infiniti
 PRODUCT_MANUFACTURER := OnePlus
