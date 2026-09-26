@@ -2,6 +2,9 @@
 bluetooth.device.default_name=OnePlus 15
 
 # Display
+vendor.display.oplus_adfr=1
+vendor.display.oplus_adfr.min_fps=1
+vendor.display.oplus_adfr.supported_rates=60,90,120
 vendor.display.enable_spr_bypass=0
 vendor.display.enable_spr=1
 
