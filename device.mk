@@ -21,9 +21,6 @@ TARGET_SCREEN_WIDTH := 1272
 # Display
 $(call soong_config_set_bool,qtidisplay,oplus_adfr,true)
 
-PRODUCT_PACKAGES += \
-    OplusDisplaySettings
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/display/displayconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946903293830803.xml \
     $(LOCAL_PATH)/configs/display/displayconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946982335253651.xml
