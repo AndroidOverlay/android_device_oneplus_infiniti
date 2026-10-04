@@ -1519,6 +1519,8 @@ odm/firmware/fastchg/smart_chg_config_table.txt
 # Display configurations
 my_product/vendor/etc/display_apollo_list_AA601_P_7_A0020_dsc_cmd_mode_panel.xml:vendor/etc/display_apollo_list_AA601_P_7_A0020_dsc_cmd_mode_panel.xml
 my_product/vendor/etc/display_apollo_list_AD296_P_3_A0020_dsc_cmd_mode_panel.xml:vendor/etc/display_apollo_list_AD296_P_3_A0020_dsc_cmd_mode_panel.xml
+# From PLK110_17.0.0.102(CN01)
+my_product/vendor/etc/multimedia_display_adfr2minfps_config.xml:vendor/etc/multimedia_display_adfr2minfps_config.xml|0fbe8f865748d261d19e5c356e112c35b36e5e6a
 odm/etc/PanelChaplin/3D-Lut_Center_P3.txt
 odm/etc/PanelChaplin/3D-Lut_Center_sRGB.txt
 odm/etc/PanelChaplin/3D-Lut_Enhance_P3.txt
