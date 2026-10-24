@@ -1809,6 +1809,16 @@ odm/etc/nfc/libnfc-mtp-SN220.conf_24863:odm/etc/libnfc-mtp-SN220.conf_24863
 odm/etc/nfc/libnfc-nci.conf_24863:vendor/etc/libnfc-nci.conf
 odm/etc/nfc/sn220u.bin_sn220tu_fw_01_01_45:vendor/firmware/sn220u.bin
 
+# Quick Share extension (AirDrop interoperability)
+# From CPH2747_16.0.10.601(EX01)
+odm/bin/mosey_server|db0a0f76114cbc8baa4236f29b5b303f2426bbfe
+odm/etc/init/mosey.rc|be12e232d4028aeb72cdaa37c761fd0cd9556d96
+odm/etc/vintf/manifest/manifest_mosey.xml|251f5e9f1b102ec864504ee787eabde553e0c0ed
+odm/lib64/libmosey_daemon_ffi.so|067ecd4955b333b111c0a87a9a7400e573891977
+system_ext/etc/default-permissions/default-permissions-com.google.android.mosey.xml|b27f822757b2100e9b93d693c11cba1b7af4e1c4|51775bfe11600455f5e0bb431e47e21790468f66
+system_ext/etc/permissions/privapp-permissions-com.google.android.mosey.xml|19e4680a208ad0031568f1aedf933fcd75eb934a
+system_ext/priv-app/MoseyApp/MoseyApp.apk;PRESIGNED|cfcf7e5721f1c2281b98bbd5f2c7e4beb18ac6f2
+
 # Sensors config
 odm/etc/sensor/config/infiniti_qrd_ois_system.json
 odm/etc/sensor/config/json_list

@@ -71,6 +71,10 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('android.hardware.graphics.common-V5-ndk.so', 'android.hardware.graphics.common-V7-ndk.so'),
     'odm/lib64/liboprec_audrec.so': blob_fixup()
         .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
+    'system_ext/etc/default-permissions/default-permissions-com.google.android.mosey.xml': blob_fixup()
+        # MoseyApp needs it for mDNS on mosey0, Android 16 has no such permission
+        .regex_replace(r'( *)(<permission name="android.permission.NEARBY_WIFI_DEVICES" />)',
+            r'\1\2\n\1<permission name="android.permission.ACCESS_LOCAL_NETWORK" />'),
     'vendor/etc/libnfc-nci.conf': blob_fixup()
         .regex_replace('NFC_DEBUG_ENABLED=1', 'NFC_DEBUG_ENABLED=0'),
     (

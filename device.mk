@@ -85,6 +85,10 @@ PRODUCT_PACKAGES += \
 $(call soong_config_set_bool,qti_vibrator,use_effect_stream,true)
 $(call soong_config_set,qti_vibrator,effect_lib,libqtivibratoreffect.oplus.infiniti)
 
+# VINTF
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+    device/oneplus/infiniti/vintf/framework_compatibility_matrix_mosey.xml
+
 # Inherit from the common OEM chipset makefile.
 $(call inherit-product, device/oneplus/sm8850-common/common.mk)
 
