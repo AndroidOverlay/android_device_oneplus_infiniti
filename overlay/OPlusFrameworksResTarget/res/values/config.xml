@@ -297,4 +297,13 @@
          booted.  -->
     <integer name="config_stableDeviceDisplayWidth">1272</integer>
     <integer name="config_stableDeviceDisplayHeight">2772</integer>
+
+    <!-- Build fields to set in Google Play services processes, except the unstable process.
+         Report the global OnePlus 15 that the fingerprint names, instead of the CN model
+         imported from odm on prjname 24831. -->
+    <string-array name="config_gmsBuildProperties" translatable="false">
+        <item>MODEL:CPH2745</item>
+        <item>DEVICE:OP611FL1</item>
+        <item>PRODUCT:CPH2745IN</item>
+    </string-array>
 </resources>
