@@ -35,7 +35,11 @@ $(call soong_config_set_bool,OPLUS_LINEAGE_LIVEDISPLAY_HAL,ENABLE_SE,false)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-lineage \
+    $(LOCAL_PATH)/overlay-no-rro
+
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-no-rro
 
 PRODUCT_PACKAGES += \
     FrameworksResEuicc \

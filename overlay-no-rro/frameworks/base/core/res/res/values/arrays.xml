@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Certificate digests for trusted apps that will be allowed to obtain the knownSigner Wi-Fi
+         permissions. Permission knownCerts are read when the framework manifest is parsed, before
+         runtime overlays apply, so this has to be a static overlay. -->
+    <string-array name="wifi_known_signers">
+        <!-- MoseyApp: MANAGE_WIFI_NETWORK_SELECTION to pause autojoin while mosey runs -->
+        <item>82F90326951D14E08010B2A26CCE329BE2B09E74752158B7640E04A544676878</item>
+    </string-array>
+</resources>
